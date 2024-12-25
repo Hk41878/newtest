@@ -38,7 +38,7 @@ const episodes = {
   ],
   S04: [
     { title: "Two Swords", link: "vlc://https://prod-940b1d9bbad9901.wdckeystone.com/9e7f3dc5-7a69-44a2-9672-b444b60548a0/sdk/v3/files/mksoaae4wh3rwd53mbliy2hv/content?access_token=eyJraWQiOiJNOHNrM1VSdnZHMnhKZ3FkZDdYdGhWZnhyQVptdmVvMyIsImFsZyI6IlJTMjU2In0.eyJqdGkiOiJKV1QiLCJhdWQiOiJrZXlzdG9uZSIsImlzcyI6Im0ybS10b2tlbi1zZXJ2aWNlIiwic3ViIjoicHVibGljX3NoYXJlIiwic2NvcGVzIjoibmFzX3JlYWRfb25seSBuYXNfcmVhZF93cml0ZSIsImN1c3RvbUNsYWltcyI6eyJkZXZpY2VJZCI6IjllN2YzZGM1LTdhNjktNDRhMi05NjcyLWI0NDRiNjA1NDhhMCIsImF1dGhfaWQiOiJiNjI1MzQ1ZS1kMjE2LTRlYTUtYTQ3YS1hY2U3MTliNGM3NTcifSwiZXhwIjoxNzM1MTQ5Njg3fQ.cqfL-iwJNUw8k79LMFzg1xfgT36Ye968uU9mYqrFCsKhctm4pNTDc374FnfDHw_jQsInNBDVXg33738WI-abbekEORS3uGahQqISXcVlLJXV65A5O6FfRa1wrbDQccQETw4jX2d_weMfraczbmuYAiv5-E9QU8nGCj6HTjNmHxZ5VGn_q9Qa1x5fqoqP_HDg_dfmL6O08Af4MW2mRqGQ5FIHQ7DIPdXJOCuzH5EJyfjrfpnsjAvBu0J4Pb_Ri2hoZLuSdcMfTNe0_4njdDJQyVa580SPq0-Onu-PaCfN8ZZfpCRkCU9djhxhsDitW48TsIL92BkzKJlMK8U_5s58EA" },
-    { title: "The Lion and the Rose", link: "http://got-s04-e02" },
+    { title: "The Lion and the Rose", link: "http://facebook.com" },
     { title: "Breaker of Chains", link: "http://got-s04-e03" },
     { title: "Oathkeeper", link: "http://got-s04-e04" },
     { title: "First of His Name", link: "http://got-s04-e05" },
