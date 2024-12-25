@@ -1,7 +1,7 @@
 // Episodes Data with Links
 const episodes = {
   S01: [
-    { title: "Winter Is Coming", link: "http://got-s01-e01" },
+    { title: "Winter Is Coming", link: "http://google.com" },
     { title: "The Kingsroad", link: "http://got-s01-e02" },
     { title: "Lord Snow", link: "http://got-s01-e03" },
     { title: "Cripples, Bastards, and Broken Things", link: "http://got-s01-e04" },
@@ -49,7 +49,7 @@ const episodes = {
     { title: "The Children", link: "http://got-s04-e10" }
   ],
   S05: [
-    { title: "The Wars to Come", link: "http://got-s05-e01" },
+    { title: "The Wars to Come", link: "http://fast.com" },
     { title: "The House of Black and White", link: "http://got-s05-e02" },
     { title: "High Sparrow", link: "http://got-s05-e03" },
     { title: "Sons of the Harpy", link: "http://got-s05-e04" },
