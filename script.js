@@ -107,7 +107,7 @@ function loadEpisodes(season) {
       card.classList.add("episode-card");
 
       card.innerHTML = `
-        <img src="IMG_0722.png" alt="Episode Image">
+        <img src="IMG_0745.png" alt="Episode Image">
         <h3>Episode ${index + 1}: ${episode.title}</h3>
         <a href="${episode.link}" target="_blank" class="play-btn">Play</a>
       `;
