@@ -3,18 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plyr Test</title>
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css">
+    <title>Honey Kumar - Contact</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .name {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .surname {
+            font-size: 1.5em;
+            color: #007bff;
+            margin-top: 5px;
+        }
+        .contact-info {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .contact-info p {
+            font-size: 1.2em;
+            margin: 8px 0;
+        }
+        .social-links a {
+            margin: 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+            color: #007bff;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Test Video with Plyr</h1>
-    <video id="player" controls>
-        <source src="https://device-local-9e7f3dc5-7a69-44a2-9672-b444b60548a0.remotewd.com:4430/sdk/v2/files/mksoaae4wh3rwd53mbliy2hv/content?download=true&access_token=eyJraWQiOiJNOHNrM1VSdnZHMnhKZ3FkZDdYdGhWZnhyQVptdmVvMyIsImFsZyI6IlJTMjU2In0.eyJqdGkiOiJKV1QiLCJhdWQiOiJrZXlzdG9uZSIsImlzcyI6Im0ybS10b2tlbi1zZXJ2aWNlIiwic3ViIjoicHVibGljX3NoYXJlIiwic2NvcGVzIjoibmFzX3JlYWRfb25seSBuYXNfcmVhZF93cml0ZSIsImN1c3RvbUNsYWltcyI6eyJkZXZpY2VJZCI6IjllN2YzZGM1LTdhNjktNDRhMi05NjcyLWI0NDRiNjA1NDhhMCIsImF1dGhfaWQiOiJiNjI1MzQ1ZS1kMjE2LTRlYTUtYTQ3YS1hY2U3MTliNGM3NTcifSwiZXhwIjoxNzM1NjczMTUyfQ.EsZwcTyB_VNkcfvUaDbTv3tyumlFcVuLqFnav_n-52rZ5WgsXTJOiVhQ9Mxc-l6KQhDPoAVvL3duZCRQVTm8BsBNX2aenG_tH5VeePRAlypfFT7An2712NjqZbFHKpGXhvJRsdibR_OvreKbIzxkwWDuGc2tWSMnePfKyHvZaTM8rVFwdXPmdigt0plQsjojw_7DgYUYVd-pacrKsNXw4S1pJuCn9OLkJVXrfvxk9M0_jaeo6FiiPiFdITgE4PApj4GHefbqjuJzieD0kl3dhgTRDd0aAWv8wymmXRmAbeMVyN3oUubye2HIXSgWHMvGIBHzrBntYJbZjUox1oxzcg" type="video/mp4">
-        Your browser does not support HTML5 video.
-    </video>
-    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+
+    <div class="container">
+        <div class="name">Honey</div>
+        <div class="surname">Kumar</div>
+        
+        <div class="contact-info">
+            <p><strong>Email:</strong> cyzght007@mail.me</p>
+            <p><strong>Phone:</strong> +391234567890</p>
+            <p><strong>WhatsApp:</strong> +391234567890</p>
+        </div>
+
+        <div class="social-links">
+            <p><strong>Instagram:</strong> <a href="https://instagram.com/honeyinly" target="_blank">@honeyinly</a></p>
+            <p><strong>Telegram:</strong> <a href="https://t.me/honeyinly" target="_blank">@honeyinly</a></p>
+        </div>
+    </div>
+
     <script>
-        const player = new Plyr('#player');
+        // This function could be used for future functionality, e.g., for form submissions or other interactivity
+        function displayMessage() {
+            alert("Welcome to Honey's Contact Card!");
+        }
+
+        // Uncomment the next line to show the alert when the page loads
+        // window.onload = displayMessage;
     </script>
+
 </body>
 </html>
