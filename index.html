@@ -3,24 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Video</title>
-    <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet">
+    <title>Plyr Test</title>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css">
 </head>
 <body>
-    <h1>Test Video</h1>
-    <video
-        id="my-video"
-        class="video-js"
-        controls
-        preload="auto"
-        width="640"
-        height="360"
-        data-setup="{}"
-    >
-        <source src="https://device-local-9e7f3dc5-7a69-44a2-9672-b444b60548a0.remotewd.com:4430/sdk/v2/files/mksoaae4wh3rwd53mbliy2hv/content?download=true&access_token=eyJraWQiOiJNOHNrM1VSdnZHMnhKZ3FkZDdYdGhWZnhyQVptdmVvMyIsImFsZyI6IlJTMjU2In0.eyJqdGkiOiJKV1QiLCJhdWQiOiJrZXlzdG9uZSIsImlzcyI6Im0ybS10b2tlbi1zZXJ2aWNlIiwic3ViIjoicHVibGljX3NoYXJlIiwic2NvcGVzIjoibmFzX3JlYWRfb25seSBuYXNfcmVhZF93cml0ZSIsImN1c3RvbUNsYWltcyI6eyJkZXZpY2VJZCI6IjllN2YzZGM1LTdhNjktNDRhMi05NjcyLWI0NDRiNjA1NDhhMCIsImF1dGhfaWQiOiJiNjI1MzQ1ZS1kMjE2LTRlYTUtYTQ3YS1hY2U3MTliNGM3NTcifSwiZXhwIjoxNzM1NjcyMjkwfQ.aFOfgIfRt_rOD1IXY69d2bN1heECDqM6iREehoy057QtJ-VJw7Mxr1f6xzFg1ZHABbELwi5dee59kb3ZLBWo3XirZ1_ghHwPiuLsNuYgYq2yLJnEShkChBTcg3yS54wylHCKS02OStavK-oxn0UPLbrENDPh7HP7CsdTo7vvm0tqwYzXNubbjU77bRhKP4dm4zovjxMyfa9YoAk27WRPD9aR2-RPe_cFl4mZiNyXlwkOkwJEUG-Q9uU9g3RvbYI4RdXMSVSmJ_dz3iywp8QZfBxmyjpuhiCqKR6tH3O4kkOArLz2-3CdzYTqp_HGmgQxa6YSFTfISI8UrCozzHUL0w" type="video/mp4">
-        Your browser does not support the video tag.
+    <h1>Test Video with Plyr</h1>
+    <video id="player" controls>
+        <source src="https://device-local-9e7f3dc5-7a69-44a2-9672-b444b60548a0.remotewd.com:4430/sdk/v2/files/mksoaae4wh3rwd53mbliy2hv/content?download=true&access_token=eyJraWQiOiJNOHNrM1VSdnZHMnhKZ3FkZDdYdGhWZnhyQVptdmVvMyIsImFsZyI6IlJTMjU2In0.eyJqdGkiOiJKV1QiLCJhdWQiOiJrZXlzdG9uZSIsImlzcyI6Im0ybS10b2tlbi1zZXJ2aWNlIiwic3ViIjoicHVibGljX3NoYXJlIiwic2NvcGVzIjoibmFzX3JlYWRfb25seSBuYXNfcmVhZF93cml0ZSIsImN1c3RvbUNsYWltcyI6eyJkZXZpY2VJZCI6IjllN2YzZGM1LTdhNjktNDRhMi05NjcyLWI0NDRiNjA1NDhhMCIsImF1dGhfaWQiOiJiNjI1MzQ1ZS1kMjE2LTRlYTUtYTQ3YS1hY2U3MTliNGM3NTcifSwiZXhwIjoxNzM1NjczMTUyfQ.EsZwcTyB_VNkcfvUaDbTv3tyumlFcVuLqFnav_n-52rZ5WgsXTJOiVhQ9Mxc-l6KQhDPoAVvL3duZCRQVTm8BsBNX2aenG_tH5VeePRAlypfFT7An2712NjqZbFHKpGXhvJRsdibR_OvreKbIzxkwWDuGc2tWSMnePfKyHvZaTM8rVFwdXPmdigt0plQsjojw_7DgYUYVd-pacrKsNXw4S1pJuCn9OLkJVXrfvxk9M0_jaeo6FiiPiFdITgE4PApj4GHefbqjuJzieD0kl3dhgTRDd0aAWv8wymmXRmAbeMVyN3oUubye2HIXSgWHMvGIBHzrBntYJbZjUox1oxzcg" type="video/mp4">
+        Your browser does not support HTML5 video.
     </video>
-
-    <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    <script>
+        const player = new Plyr('#player');
+    </script>
 </body>
 </html>
