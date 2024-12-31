@@ -1,40 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game of Thrones</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video</title>
+    <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Game of Thrones</h1>
-  </header>
+    <h1>Test Video</h1>
+    <video
+        id="my-video"
+        class="video-js"
+        controls
+        preload="auto"
+        width="640"
+        height="360"
+        data-setup="{}"
+    >
+        <source src="https://device-local-9e7f3dc5-7a69-44a2-9672-b444b60548a0.remotewd.com:4430/sdk/v2/files/mksoaae4wh3rwd53mbliy2hv/content?download=true&access_token=eyJraWQiOiJNOHNrM1VSdnZHMnhKZ3FkZDdYdGhWZnhyQVptdmVvMyIsImFsZyI6IlJTMjU2In0.eyJqdGkiOiJKV1QiLCJhdWQiOiJrZXlzdG9uZSIsImlzcyI6Im0ybS10b2tlbi1zZXJ2aWNlIiwic3ViIjoicHVibGljX3NoYXJlIiwic2NvcGVzIjoibmFzX3JlYWRfb25seSBuYXNfcmVhZF93cml0ZSIsImN1c3RvbUNsYWltcyI6eyJkZXZpY2VJZCI6IjllN2YzZGM1LTdhNjktNDRhMi05NjcyLWI0NDRiNjA1NDhhMCIsImF1dGhfaWQiOiJiNjI1MzQ1ZS1kMjE2LTRlYTUtYTQ3YS1hY2U3MTliNGM3NTcifSwiZXhwIjoxNzM1NjcyMjkwfQ.aFOfgIfRt_rOD1IXY69d2bN1heECDqM6iREehoy057QtJ-VJw7Mxr1f6xzFg1ZHABbELwi5dee59kb3ZLBWo3XirZ1_ghHwPiuLsNuYgYq2yLJnEShkChBTcg3yS54wylHCKS02OStavK-oxn0UPLbrENDPh7HP7CsdTo7vvm0tqwYzXNubbjU77bRhKP4dm4zovjxMyfa9YoAk27WRPD9aR2-RPe_cFl4mZiNyXlwkOkwJEUG-Q9uU9g3RvbYI4RdXMSVSmJ_dz3iywp8QZfBxmyjpuhiCqKR6tH3O4kkOArLz2-3CdzYTqp_HGmgQxa6YSFTfISI8UrCozzHUL0w" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-  <main>
-    <div class="season-selector">
-      <label for="season">Select Season:</label>
-      <select id="season">
-        <option value="S01">Season 1</option>
-        <option value="S02">Season 2</option>
-        <option value="S03">Season 3</option>
-        <option value="S04">Season 4</option>
-        <option value="S05">Season 5</option>
-        <option value="S06">Season 6</option>
-        <option value="S07">Season 7</option>
-        <option value="S08">Season 8</option>
-      </select>
-    </div>
-
-    <div id="episodes" class="episodes">
-      <!-- Episodes will be dynamically loaded here -->
-    </div>
-  </main>
-
-  <footer>
-    <p>© 2024 Game of Thrones</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
 </body>
 </html>
