@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Create Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Webpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            transition: background 3s ease-in-out;
+        }
+
+        .ball {
+            position: absolute;
+            bottom: 0;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            animation: bounce 2s infinite ease-in-out;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-200px); }
+        }
+    </style>
 </head>
 <body>
-  <form id="contactForm">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required><br>
-    <label for="phone">Phone:</label>
-    <input type="text" id="phone" name="phone" required><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br>
-    <label for="website">Website:</label>
-    <input type="url" id="website" name="website"><br>
-    <label for="dob">Date of Birth:</label>
-    <input type="date" id="dob" name="dob"><br><br>
-    <button type="button" id="createContact">Create Contact</button>
-  </form>
 
-  <script>
-    document.getElementById("createContact").addEventListener("click", function() {
-      const name = document.getElementById("name").value;
-      const phone = document.getElementById("phone").value;
-      const email = document.getElementById("email").value;
-      const website = document.getElementById("website").value;
-      const dob = document.getElementById("dob").value;
+    <div class="ball"></div>
 
-      // Create vCard content
-      const vCard = `BEGIN:VCARD
-VERSION:3.0
-FN:${name}
-TEL:${phone}
-EMAIL:${email}
-URL:${website}
-BDAY:${dob}
-END:VCARD`;
+    <script>
+        // Dynamic Background Color Change
+        function changeBackgroundColor() {
+            const colors = ['#ff5733', '#33ff57', '#5733ff', '#ff33a1', '#33a1ff', '#a1ff33'];
+            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+        setInterval(changeBackgroundColor, 3000);
 
-      // Create a Blob and download
-      const blob = new Blob([vCard], { type: "text/vcard" });
-      const url = URL.createObjectURL(blob);
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = `${name}.vcf`;
-      link.click();
-      URL.revokeObjectURL(url);
-    });
-  </script>
+        // Bouncing Ball with Random Heights
+        function randomBounce() {
+            let ball = document.querySelector('.ball');
+            let bounceHeight = Math.floor(Math.random() * 200) + 100; // Random between 100px - 300px
+            ball.style.animation = `bounce 2s infinite ease-in-out`;
+            ball.style.setProperty('--bounce-height', `-${bounceHeight}px`);
+        }
+        setInterval(randomBounce, 2000);
+    </script>
+
 </body>
 </html>
